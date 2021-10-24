@@ -1,4 +1,4 @@
-# universidadsergioarboleda
+# Profesor John Corredor, PhD
 Repositorio Profesor John Corredor de la Universidad Sergio Arboleda
 
 ## DataSet
