@@ -1,8 +1,11 @@
 # Profesor John Corredor, PhD
-Repositorio Profesor John Corredor de la Universidad Sergio Arboleda
+Repositorio Programación Avanzada
 
-## DataSet
-Contiene los conjuntos de datos usados en las clases
+## Modelos Parciales
+Contiene los ficheros y modelos de los parciales
 
 ## Java
 Contiene los ficheros principales sobre el Curso Orientado a Objetos
+
+## C++
+Contiene los ficheros principales sobre Programación en C++
