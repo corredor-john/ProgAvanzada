@@ -1,22 +1,7 @@
 # Ejercicio Modelo Tercer Parcial: Programación Avanzada
 ## _John Corredor, PhD_
 
-by: Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor. 
-Markdown <.MD> is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
-
-- Type some Markdown on the left
-- See HTML in the right
 - ✨Magic ✨
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
 
 ## Características del MODELO
 - Representa un modelo práctico del 3er parcial
@@ -26,9 +11,9 @@ As [John Gruber] writes on the [Markdown site][df1]
 ### Propuesta MODELO TERCER PARCIAL
 
 
-a. En el contexto de la construcción de un modelo de aprendizaje automático, desarrolle una clase abstracta llamada ```Modelo``` que tiene como atributos el nombre (String) y el número de parámetros (int). Debe tener un constructor que permita inicializar sus atributos y un método abstracto llamado ```entrenar``` de tipo void.
+> a. En el contexto de la construcción de un modelo de aprendizaje automático, desarrolle una clase abstracta llamada ```Modelo``` que tiene como atributos el nombre (String) y el número de parámetros (int). Debe tener un constructor que permita inicializar sus atributos y un método abstracto llamado ```entrenar``` de tipo void.
 
-b. Diseñe una clase llamada ```ModeloLineal``` hija de ```Modelo``` que tiene como atributos adicionales el coeficiente de correlación (double) y el error cuadrático medio (double). Debe tener un método constructor que permita inicializar sus atributos y los del padre. Sobreescribe el método ```entrenar``` el cual muestra por pantalla el proceso de entrenamiento de un modelo lineal de esta manera:
+> b. Diseñe una clase llamada ```ModeloLineal``` hija de ```Modelo``` que tiene como atributos adicionales el coeficiente de correlación (double) y el error cuadrático medio (double). Debe tener un método constructor que permita inicializar sus atributos y los del padre. Sobreescribe el método ```entrenar``` el cual muestra por pantalla el proceso de entrenamiento de un modelo lineal de esta manera:
 
 ```bash
 Entrenando modelo lineal: <nombre>
@@ -38,7 +23,7 @@ Error cuadrático medio inicial: <error>
 Entrenamiento completado.
 ```
 
-c. Diseñe una clase llamada ModeloArbolDecision hija de Modelo que tiene como atributos adicionales la profundidad del árbol (int) y la cantidad de nodos hoja (int). La clase ModeloArbolDecision debe tener también un constructor que permite inicializar sus atributos y los del padre. Sobreescribe el método entrenar para que muestre por pantalla la información del entrenamiento del modelo de árbol de decisión así:
+> c. Diseñe una clase llamada ModeloArbolDecision hija de Modelo que tiene como atributos adicionales la profundidad del árbol (int) y la cantidad de nodos hoja (int). La clase ModeloArbolDecision debe tener también un constructor que permite inicializar sus atributos y los del padre. Sobreescribe el método entrenar para que muestre por pantalla la información del entrenamiento del modelo de árbol de decisión así:
 
 ```bash
 Entrenando modelo de árbol de decisión: <nombre>
@@ -48,9 +33,9 @@ Número de nodos hoja: <nodos hoja>
 Entrenamiento completado.
 ```
 
-d. En el main de una aplicación en consola construya una lista de Modelos (objetos de tipo ModeloLineal y ModeloArbolDecision, en la misma lista puede haber objetos de los dos tipos). Construya por lo menos un objeto de cada tipo. Y en el mismo método del main desarrolle un ciclo que muestre por pantalla el proceso de entrenamiento de cada modelo usando el método entrenar de cada clase. En este punto debe utilizar polimorfismo para la lista de Modelos y para entrenar los modelos.
+> d. En el main de una aplicación en consola construya una lista de Modelos (objetos de tipo ModeloLineal y ModeloArbolDecision, en la misma lista puede haber objetos de los dos tipos). Construya por lo menos un objeto de cada tipo. Y en el mismo método del main desarrolle un ciclo que muestre por pantalla el proceso de entrenamiento de cada modelo usando el método entrenar de cada clase. En este punto debe utilizar polimorfismo para la lista de Modelos y para entrenar los modelos.
 
-e. Desarrolle una clase llamada Validador que tenga un método llamado validarModelo. Este método debe recibir un objeto de la clase Modelo, ejecutar el método entrenar del modelo, y luego imprimir un mensaje que indique si el modelo es válido o no. Un modelo se considera válido si cumple las siguientes condiciones:
+> e. Desarrolle una clase llamada Validador que tenga un método llamado validarModelo. Este método debe recibir un objeto de la clase Modelo, ejecutar el método entrenar del modelo, y luego imprimir un mensaje que indique si el modelo es válido o no. Un modelo se considera válido si cumple las siguientes condiciones:
 
 * Para los modelos lineales, el coeficiente de correlación debe ser superior a 0.8 y el error cuadrático medio debe ser inferior a 0.2.
 * Para los modelos de árbol de decisión, la profundidad del árbol debe ser inferior a 10 y el número de nodos hoja debe ser superior a 5.
