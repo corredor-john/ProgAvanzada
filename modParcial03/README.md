@@ -37,16 +37,16 @@ Entrenamiento completado.
 
 > e. Desarrolle una clase llamada Validador que tenga un método llamado validarModelo. Este método debe recibir un objeto de la clase Modelo, ejecutar el método entrenar del modelo, y luego imprimir un mensaje que indique si el modelo es válido o no. Un modelo se considera válido si cumple las siguientes condiciones:
 
-* Para los modelos lineales, el coeficiente de correlación debe ser superior a 0.8 y el error cuadrático medio debe ser inferior a 0.2.
-* Para los modelos de árbol de decisión, la profundidad del árbol debe ser inferior a 10 y el número de nodos hoja debe ser superior a 5.
+> * Para los modelos lineales, el coeficiente de correlación debe ser superior a 0.8 y el error cuadrático medio debe ser inferior a 0.2.
+> * Para los modelos de árbol de decisión, la profundidad del árbol debe ser inferior a 10 y el número de nodos hoja debe ser superior a 5.
 
-El método debe imprimir el siguiente mensaje si el modelo es válido:
+> El método debe imprimir el siguiente mensaje si el modelo es válido:
 
 ```bash
 El modelo <nombre> ha pasado la validación.
 ```
 
-Y el siguiente mensaje si el modelo no es válido:
+> Y el siguiente mensaje si el modelo no es válido:
 
 ```bash
 El modelo <nombre> no ha pasado la validación.
