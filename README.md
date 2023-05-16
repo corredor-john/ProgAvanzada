@@ -1,11 +1,17 @@
 # Profesor John Corredor, PhD
-Repositorio Programación Avanzada
+> Pontificia Universidad Javeriana
+> Bogotá Colombia
 
-## Modelos Parciales
+## Repositorio Programación Avanzada
+
+```bash
+» Modelos Parciales
 Contiene los ficheros y modelos de los parciales
 
-## Java
+» Java
 Contiene los ficheros principales sobre el Curso Orientado a Objetos
 
-## C++
+» C++
 Contiene los ficheros principales sobre Programación en C++
+
+```
